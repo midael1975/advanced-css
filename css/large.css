@@ -1,0 +1,25 @@
+@media (min-width: 64em) {
+    div {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    header {
+        grid-column: 1/2;
+    }
+
+    main {
+        grid-column: 2/3;
+    }
+
+    article {
+        width: 60%;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    img {
+        width: 50%;
+    }
+}

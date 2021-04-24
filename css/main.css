@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@300&display=swap');
+body {
+    background-color: #FAEBD7;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+header {
+    background-color:  #6495ED;
+	align-items:center;
+    justify-content:center;
+    padding: 5px 0;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+a, h1 {
+    color: #FAEBD7;
+    text-align: right;
+    text-decoration: none;
+    
+}
+
+nav {
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none; /*removes the bullets! */
+    
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+
+nav a:active {
+    color:#DEB887;
+}
+
+main {
+    background-color:  #FAEBD7;
+}
+
+article {
+    background-color: white;
+    margin:auto;
+    display: block;
+    margin: 20px 30px 20px 20px;
+}
+
+figure  {
+    margin:auto;
+    display: block;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+    display: block;
+
+}
+
+.post-date {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+section a {
+    color: black;
+}
+
+section a:active {
+    color:#DEB887;
+
+}
+
+p a {
+    color: #6495ED;
+}
+
+section h2, p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+p a:hover {
+    text-decoration: underline;
+    
+}
+
+article h2 a:hover {
+    color:  #6495ED;
+    text-decoration: underline;
+}
+
+article h2 a:active {
+    color:#DEB887;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
