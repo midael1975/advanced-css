@@ -1,0 +1,187 @@
+// Variable assignment
+//set breakpoint sizes
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+//colors
+$body-background-color: #FAEBD7;
+$header-background-color: #6495ED;
+$color-nav: white;
+$nav-act:#DEB887;
+body {
+    background-color: $body-background-color;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
+    background-color: $header-background-color;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+a,
+h1 {
+    color: $body-background-color;
+    text-align: right;
+    text-decoration: none;
+}
+
+nav {
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    /*removes the bullets! */
+}
+
+nav a:hover {
+    color: $color-nav;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: $nav-act;
+}
+
+main {
+    background-color: $body-background-color;
+}
+
+article {
+    background-color: $color-nav;
+    margin: auto;
+    display: block;
+    margin: 20px 30px 20px 20px;
+}
+
+figure {
+    margin: auto;
+    display: block;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.post-date {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+section a {
+    color: black;
+}
+
+section a:active {
+    color: $nav-act;
+}
+
+p a {
+    color: $header-background-color;
+}
+
+section h2,
+p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+article h2 a:hover {
+    color: $header-background-color;
+    text-decoration: underline;
+}
+
+article h2 a:active {
+    color: $nav-act;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+}
+
+//set breakpoint sizes
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+@mixin breakpoint($break) {
+    @if $break==large {
+        @media (max-width: $break-large) {
+            @content;
+        }
+    }
+    @else if $break==medium {
+        @media (max-width: $break-medium) {
+            @content;
+        }
+    }
+    @else if $break==small {
+        @media (max-width: $break-small) {
+            @content;
+        }
+    }
+    @else {
+        @media ($break) {
+            @content;
+        }
+    }
+}
+
+body {
+    background: white;
+    @include breakpoint(large) {
+        background: red;
+    }
+    @include breakpoint(medium) {
+        background: cyan;
+    }
+    @include breakpoint(small) {
+        background: green;
+    }
+    @include breakpoint("max-width: 480px") {
+        background: yellow;
+    }
+}
+
+body {
+    background: white;
+}
+
+@media (max-width: 60em) {
+    body {
+        background: red;
+    }
+}
+
+@media (max-width: 31em) {
+    body {
+        background: cyan;
+    }
+}
+
+@media (max-width: 20em) {
+    body {
+        background: green;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: yellow;
+    }
+}
