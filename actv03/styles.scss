@@ -8,6 +8,8 @@ $body-background-color: #FAEBD7;
 $header-background-color: #6495ED;
 $color-nav: white;
 $nav-act:#DEB887;
+$family: unquote("family=Lora&family=Roboto");
+@import url('https://fonts.googleapis.com/css2?=#{$family}');
 body {
     background-color: $body-background-color;
     font-size: 18px;
@@ -43,9 +45,13 @@ nav ul {
     /*removes the bullets! */
 }
 
+@mixin hover {
+    text-decoration: underline;
+}
+
 nav a:hover {
     color: $color-nav;
-    text-decoration: underline;
+    @include hover;
 }
 
 @mixin active {
@@ -102,12 +108,12 @@ p {
 }
 
 p a:hover {
-    text-decoration: underline;
+    @include hover;
 }
 
 article h2 a:hover {
     color: $header-background-color;
-    text-decoration: underline;
+    @include hover;
 }
 
 article h2 a:active {
