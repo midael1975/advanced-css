@@ -142,46 +142,80 @@ $break-large: 60em;
     }
 }
 
-body {
-    background: white;
-    @include breakpoint(large) {
-        background: red;
+@media (min-width: 61em) {
+    div {
+        display: grid;
+        grid-template-columns: 300px 1fr;
     }
-    @include breakpoint(medium) {
-        background: cyan;
+    header {
+        grid-column: 1/2;
     }
-    @include breakpoint(small) {
-        background: green;
+    main {
+        grid-column: 2/3;
     }
-    @include breakpoint("max-width: 480px") {
-        background: yellow;
+    article {
+        width: 60%;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
     }
-}
-
-body {
-    background: white;
+    img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 60em) {
-    body {
+    div {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    header {
+        grid-column: 1/2;
+    }
+    main {
+        grid-column: 2/3;
+    }
+    article {
+        width: 60%;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    img {
+        width: 50%;
+    }
+    body,
+    main {
         background: red;
     }
 }
 
 @media (max-width: 31em) {
-    body {
+    body,
+    main {
         background: cyan;
+    }
+    div {
+        display: block;
     }
 }
 
 @media (max-width: 20em) {
-    body {
+    body,
+    main {
         background: green;
+    }
+    div {
+        display: block;
     }
 }
 
 @media (max-width: 480px) {
-    body {
+    body,
+    main {
         background: yellow;
+    }
+    div {
+        display: block;
     }
 }
