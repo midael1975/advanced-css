@@ -115,75 +115,34 @@ h2 {
     font-family: 'Lora', serif;
 }
 
-//set breakpoint sizes
-$break-small: 20em;
-$break-medium: 31em;
-$break-large: 60em;
-@mixin breakpoint($break) {
-    @if $break==large {
-        @media (max-width: $break-large) {
-            @content;
-        }
+@mixin large-text {
+    div {
+        display: grid;
+        grid-template-columns: 300px 1fr;
     }
-    @else if $break==medium {
-        @media (max-width: $break-medium) {
-            @content;
-        }
+    header {
+        grid-column: 1/2;
     }
-    @else if $break==small {
-        @media (max-width: $break-small) {
-            @content;
-        }
+    main {
+        grid-column: 2/3;
     }
-    @else {
-        @media ($break) {
-            @content;
-        }
+    article {
+        width: 60%;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    img {
+        width: 50%;
     }
 }
 
 @media (min-width: 61em) {
-    div {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-    }
-    header {
-        grid-column: 1/2;
-    }
-    main {
-        grid-column: 2/3;
-    }
-    article {
-        width: 60%;
-        margin: auto;
-        display: block;
-        margin-top: 30px;
-    }
-    img {
-        width: 50%;
-    }
+    @include large-text;
 }
 
 @media (max-width: 60em) {
-    div {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-    }
-    header {
-        grid-column: 1/2;
-    }
-    main {
-        grid-column: 2/3;
-    }
-    article {
-        width: 60%;
-        margin: auto;
-        display: block;
-        margin-top: 30px;
-    }
-    img {
-        width: 50%;
-    }
+    @include large-text;
     body,
     main {
         background: red;
