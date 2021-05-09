@@ -48,8 +48,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav a:active {
+@mixin active {
     color: $nav-act;
+}
+
+nav a:active {
+    @include active;
 }
 
 main {
@@ -84,7 +88,7 @@ section a {
 }
 
 section a:active {
-    color: $nav-act;
+    @include active;
 }
 
 p a {
@@ -107,7 +111,7 @@ article h2 a:hover {
 }
 
 article h2 a:active {
-    color: $nav-act;
+    @include active;
 }
 
 h1,
