@@ -1023,12 +1023,28 @@ img {
 
 .sr-only {
   position: absolute;
-  width: 1px;
+  width: 10px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #056cb6;
+  height: 70px;
+  margin-top: 0px;
+}
+
+.icon-byui-logo {
+  background-color: #020202;
+  color: white;
+  font-size: 60px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,5 @@
 @import 'typography';
 @import 'icons';
-
 $sm-break: 48em;
 // colors
 $dark-gray: #727272;
@@ -9,25 +8,42 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
-
 // Utility classes
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+header {
+    width: 100%;
+    background-color: $byui-blue;
+    height: 70px;
+    margin-top: 0px;
+}
+
+.icon-byui-logo {
+    background-color: $body-font;
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 30px;
 }
