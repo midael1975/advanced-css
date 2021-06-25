@@ -1,0 +1,45 @@
+a {
+    transition: 1s;
+}
+
+a:link {
+    color: #309;
+}
+
+a:hover {
+    color: #f0c;
+}
+
+li .rojo {
+    transition: 500ms;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.rojo {
+    background-color: red;
+    width: 100%;
+    color: white;
+    height: 20px;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 100%;
+    color: white;
+    height: 20px;
+}
+
+.blue {
+    background-color: blue;
+    width: 100%;
+    color: white;
+    height: 20px;
+}
+
+#thanks {
+    color: fuchsia;
+    margin-top: 20px;
+}

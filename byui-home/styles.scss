@@ -158,6 +158,8 @@ header {
         text-align: center;
         font-size: small;
         border: solid saddlebrown 2px;
+        color: white;
+        background-color: $dark-gray;
     }
     .resources {
         grid-column: 4/5;
@@ -174,6 +176,8 @@ header {
     }
     .dates h3 {
         text-align: center;
+        background-color: $byui-blue;
+        color: white;
     }
     .nw1 {
         grid-column: 1/2;

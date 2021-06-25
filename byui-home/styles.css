@@ -1189,6 +1189,8 @@ header {
     text-align: center;
     font-size: small;
     border: solid saddlebrown 2px;
+    color: white;
+    background-color: #727272;
   }
   .resources {
     -ms-grid-column: 4;
@@ -1213,6 +1215,8 @@ header {
   }
   .dates h3 {
     text-align: center;
+    background-color: #056cb6;
+    color: white;
   }
   .nw1 {
     -ms-grid-column: 1;
